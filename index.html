@@ -1,116 +1,46 @@
-<!DOCTYPE html><html lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MozLinked</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }header {
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.logo {
-  font-size: 28px;
-  font-weight: bold;
-  color: #111;
-}
-
-.highlight {
-  color: #007bff; /* azul */
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-.hero {
-  text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #007bff, #00c6ff);
-  color: #fff;
-}
-
-.categoria {
-  padding: 40px 20px;
-  background-color: #fff;
-  margin: 20px auto;
-  max-width: 900px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-footer {
-  background-color: #f0f0f0;
-  padding: 30px 20px;
-  text-align: center;
-  color: #555;
-  font-size: 14px;
-}
-
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  padding: 12px 18px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-}
-
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
+    <img src="assets/logo.png" alt="MozLinked Logo" class="logo">
     <nav>
-      <h1 class="logo">Moz<span class="highlight">Linked</span></h1>
-      <ul class="nav-links">
-        <li><a href="#prov">Províncias</a></li>
-        <li><a href="#dist">Distritos</a></li>
-        <li><a href="#intern">Internacionais</a></li>
+      <ul>
+        <li><a href="#provincias">Províncias</a></li>
+        <li><a href="#distritos">Distritos</a></li>
+        <li><a href="#internacionais">Internacionais</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
-  </header>  <section class="hero">
-    <h2>Descubra oportunidades em Moçambique e além!</h2>
-    <p>Empregos, bolsas, estágios, formações e muito mais.</p>
-  </section>  <section id="prov" class="categoria">
-    <h3>Oportunidades por Província</h3>
-    <p>Brevemente disponíveis...</p>
-  </section>  <section id="dist" class="categoria">
-    <h3>Oportunidades por Distrito</h3>
-    <p>Brevemente disponíveis...</p>
-  </section>  <section id="intern" class="categoria">
-    <h3>Oportunidades Internacionais</h3>
-    <p>Brevemente disponíveis...</p>
-  </section>  <footer id="contacto">
-    <p>📞 Contacto oficial: +258 861 756 552</p>
-    <p>&copy; 2025 MozLinked. Desenvolvido com ❤️ em Moçambique.</p>
-  </footer>  <!-- Botão WhatsApp --><a href="https://wa.me/258861756552" class="whatsapp-float" target="_blank">WhatsApp</a>
+  </header>
 
+  <main>
+    <section id="provincias">
+      <h2>Oportunidades por Províncias</h2>
+      <p>Em breve aqui serão exibidas oportunidades nas províncias de Moçambique.</p>
+    </section>
+
+    <section id="distritos">
+      <h2>Oportunidades por Distritos</h2>
+      <p>Descubra vagas, estágios e bolsas organizadas por distritos.</p>
+    </section>
+
+    <section id="internacionais">
+      <h2>Oportunidades Internacionais</h2>
+      <p>Acompanhe oportunidades de bolsas, empregos e cursos fora de Moçambique.</p>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <p>Contacto oficial: +258 861 756 552</p>
+    <p>&copy; 2025 MozLinked. Todos os direitos reservados.</p>
+  </footer>
+
+  <a href="https://wa.me/258861756552" class="whatsapp-float" target="_blank">WhatsApp</a>
 </body>
 </html>
