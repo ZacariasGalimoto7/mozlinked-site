@@ -2,12 +2,111 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MozLinked</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f4f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .logo-text {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logo-text span {
+      color: blue;
+    }
+
+    main {
+      padding: 30px;
+    }
+
+    h2 {
+      color: #004080;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #004080;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
   <header>
     <div class="logo">
-      <!-- Logotipo embutido (não precisa baixar) -->
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAADVCAYAAAB4AMbnAAAACXBIWXMAABYlAAAWJQFJUiTwAAAGY0lEQVR4nO3dzU4UWRiA4Suv/R9mxVGLagp0ClqDeGItBQ9HLLq8vM+Tb8JmpvnzFZ9NQQBAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRBE/wXLBtxkrxyYX3MLPr+w1jLPfsZ3zGMP3LZcZDzAewt/gfwEz/8Zdz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz/8Ydz
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAuCAYAAAAGv0lZAAAACXBIWXMAAAsTAAALEwEAmpwYAAACf0lEQVR4nO2b0Y7jIAxF7/f+/5vW7q1bgA7UiR70uybiZNzROK4pbhDnXhg0UktazsATplz2XP98IhQUZGUVFUVFUVFUVFUVFUVFUVFUVFTU+SYW+AgzBlzqK6AsTDGMPADzK+LrFv5RliJvQg+W6gHZBaBNRglzDZc+4KYKQnIdwD1IrnqIg8Au9BxkS3nXkD+kDTVV6Xya6t1m/Y4W8a9xYgAUBXvq9hsk3X9nlxY+YX1lHvD+OijLRbUvJnxC/O1bOVTXbn5z6C1CtVE5r4gZqRQhxRoJKg4pxgD2vmHoNL0A0TguVuML9m+GRjGWfBDaKuQhsq+IVN7rZKnTLN6kptf5mTR+bpq3vdZDfMZtXPZGdQvAUaHeJWSWZzrhUROk+glz8PHM8UbPYRHOcOCYabxGZ44bKZh3eOLMjsh3MJ5HT7J+RkJ3AeQopDQjGPIT+cBdhmUdq0LvSMUuM0zAI6wIVt5xlm47CrztD+xQEqCH0y1yrc6Be7cvGfljCrkaMV6NHs6XMX7lNBSt6GHnslxarC0LMgh8sb7zFAdEMMbhh5YWsSG5Yjv1BZhRLcbxCvblXYHaZ7mpGV1FSRUVEVEVEVEVEVEVEVEVEVEVEVEdGv/wBuR/kHa+RyzgAAAABJRU5ErkJggg==" alt="MozLinked Logo">
+      <div class="logo-text">Moz<span>Linked</span></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="section">
+      <h2>📍 Oportunidades por Província</h2>
+      <ul>
+        <li>Maputo</li>
+        <li>Gaza</li>
+        <li>Inhambane</li>
+        <li>Sofala</li>
+        <li>Zambézia</li>
+        <li>Manica</li>
+        <li>Nampula</li>
+        <li>Niassa</li>
+        <li>Cabo Delgado</li>
+        <li>Tete</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🏙️ Oportunidades por Distrito</h2>
+      <p>Brevemente disponível.</p>
+    </div>
+
+    <div class="section">
+      <h2>🌍 Oportunidades Internacionais</h2>
+      <ul>
+        <li>Bolsas de estudo</li>
+        <li>Estágios</li>
+        <li>Emprego em ONGs</li>
+        <li>Formações fora do país</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    📞 Contacto oficial: +258 861 756 552
+  </footer>
+</body>
+  </html>
