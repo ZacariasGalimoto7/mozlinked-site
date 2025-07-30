@@ -1,102 +1,37 @@
 <!DOCTYPE html><html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MozLinked</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-    }
-    header {
-      background: #004080;
-      color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    header img {
-      height: 50px;
-    }
-    nav a {
-      color: white;
-      margin-left: 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .hero {
-      background: white;
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-      color: #004080;
-    }
-    .posts {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      padding: 2rem;
-    }
-    .post {
-      background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .post img {
-      width: 100%;
-      border-radius: 5px;
-    }
-    .post h3 {
-      color: #004080;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #004080;
-      color: white;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="MozLinked Logo">
     <nav>
-      <a href="#">Início</a>
-      <a href="#">Categorias</a>
-      <a href="#">Internacionais</a>
-      <a href="#">Partilhar</a>
-      <a href="#">Contato</a>
+      <h1 class="logo">Moz<span class="highlight">Linked</span></h1>
+      <ul class="nav-links">
+        <li><a href="#prov">Províncias</a></li>
+        <li><a href="#dist">Distritos</a></li>
+        <li><a href="#intern">Internacionais</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
     </nav>
-  </header>
-  <section class="hero">
-    <h1>MozLinked</h1>
-    <p>Oportunidades para Moçambique e além</p>
-  </section>
-  <section class="posts">
-    <div class="post">
-      <img src="https://via.placeholder.com/400x200" alt="Imagem da oportunidade">
-      <h3>Bolsa de Estudo na África do Sul</h3>
-      <p>Inscreva-se até 15 de agosto. Aberta para todos os estudantes moçambicanos.</p>
-    </div>
-    <div class="post">
-      <img src="https://via.placeholder.com/400x200" alt="Imagem da oportunidade">
-      <h3>Estágio no Banco Mundial</h3>
-      <p>Excelente chance de adquirir experiência internacional. Inscreva-se já.</p>
-    </div>
-    <div class="post">
-      <img src="https://via.placeholder.com/400x200" alt="Imagem da oportunidade">
-      <h3>Concurso de Startups</h3>
-      <p>Premiação de até 10.000 USD para ideias inovadoras em Moçambique.</p>
-    </div>
-  </section>
-  <footer>
-    &copy; 2025 MozLinked | Contacto: +258 861756552
-  </footer>
+  </header>  <section class="hero">
+    <h2>Descubra oportunidades em Moçambique e além!</h2>
+    <p>Empregos, bolsas, estágios, formações e muito mais.</p>
+  </section>  <section id="prov" class="categoria">
+    <h3>Oportunidades por Província</h3>
+    <p>Brevemente disponíveis...</p>
+  </section>  <section id="dist" class="categoria">
+    <h3>Oportunidades por Distrito</h3>
+    <p>Brevemente disponíveis...</p>
+  </section>  <section id="intern" class="categoria">
+    <h3>Oportunidades Internacionais</h3>
+    <p>Brevemente disponíveis...</p>
+  </section>  <footer id="contacto">
+    <p>📞 Contacto oficial: +258 861 756 552</p>
+    <p>&copy; 2025 MozLinked. Desenvolvido com ❤️ em Moçambique.</p>
+  </footer>  <!-- Botão WhatsApp --><a href="https://wa.me/258861756552" class="whatsapp-float" target="_blank">WhatsApp</a>
+
 </body>
 </html>
