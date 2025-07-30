@@ -1,47 +1,59 @@
-<!DOCTYPE html>
-<html lang="pt">
+<!DOCTYPE html><html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MozLinked - Oportunidades para Moçambique</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MozLinked - Oportunidades para Todos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f8f8f8;
+      padding: 0;
+      background: #f9f9f9;
     }
     header {
-      background-color: #0099cc;
+      background-color: #0077b6;
       color: white;
       padding: 20px;
       text-align: center;
     }
+    header img {
+      width: 50px;
+      vertical-align: middle;
+    }
+    header h1 {
+      display: inline-block;
+      margin: 0 0 0 10px;
+      vertical-align: middle;
+    }
     nav {
-      background-color: #0077aa;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      background-color: #023e8a;
+      padding: 10px;
+      text-align: center;
     }
     nav a {
       color: white;
-      padding: 14px 20px;
       text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
     }
     nav a:hover {
-      background-color: #005f8a;
+      text-decoration: underline;
     }
     section {
       padding: 20px;
+      max-width: 1000px;
+      margin: auto;
     }
     .card {
       background: white;
-      border-radius: 8px;
-      padding: 15px;
-      margin-bottom: 15px;
+      padding: 20px;
+      margin-bottom: 20px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-radius: 8px;
     }
     footer {
-      background-color: #0099cc;
+      background-color: #03045e;
       color: white;
       text-align: center;
       padding: 10px;
@@ -49,57 +61,38 @@
   </style>
 </head>
 <body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Map_of_Mozambique.svg/512px-Map_of_Mozambique.svg.png" alt="Logo">
+    <h1>MozLinked</h1>
+    <p>Divulgando oportunidades para estudantes e profissionais moçambicanos</p>
+  </header>  <nav>
+    <a href="#provincia">Províncias</a>
+    <a href="#distrito">Distritos</a>
+    <a href="#internacionais">Internacionais</a>
+    <a href="#contato">Contato</a>
+  </nav>  <section>
+    <div class="card" id="provincia">
+      <h2>📌 Oportunidades por Província</h2>
+      <p>Veja oportunidades disponíveis nas diferentes províncias de Moçambique.</p>
+    </div><div class="card" id="distrito">
+  <h2>🏙️ Oportunidades por Distrito</h2>
+  <p>Explore oportunidades organizadas por distritos, mais perto de si.</p>
+</div>
 
-<header>
-  <h1>MozLinked</h1>
-  <p>Conectando jovens moçambicanos a novas oportunidades</p>
-</header>
+<div class="card" id="internacionais">
+  <h2>🌍 Oportunidades Internacionais</h2>
+  <p>Conheça bolsas, estágios e empregos disponíveis no exterior.</p>
+</div>
 
-<nav>
-  <a href="#inicio">Início</a>
-  <a href="#oportunidades">Oportunidades</a>
-  <a href="#sobre">Sobre Nós</a>
-  <a href="#contato">Contato</a>
-</nav>
-
-<section id="inicio">
-  <h2>Bem-vindo ao MozLinked</h2>
-  <p>Descubra bolsas de estudo, empregos, estágios e formações que podem transformar o seu futuro.</p>
-</section>
-
-<section id="oportunidades">
-  <h2>Últimas Oportunidades</h2>
-
-  <div class="card">
-    <h3>🎓 Bolsa de Estudos para África do Sul</h3>
-    <p>Inscrições até 20 de agosto. Bolsa completa para cursos de graduação.</p>
-  </div>
-
-  <div class="card">
-    <h3>💼 Estágio na ONG Visão Jovem</h3>
-    <p>Estágio remunerado em Maputo. Duração: 6 meses.</p>
-  </div>
-
-  <div class="card">
-    <h3>📚 Curso de Programação Web Gratuito</h3>
-    <p>Online e com certificado. Início em setembro. Vagas limitadas.</p>
-  </div>
-</section>
-
-<section id="sobre">
-  <h2>Sobre Nós</h2>
-  <p>O MozLinked é uma plataforma criada para divulgar oportunidades de crescimento acadêmico e profissional em Moçambique. Queremos garantir que nenhum jovem fique sem acesso à informação que pode mudar a sua vida.</p>
-</section>
-
-<section id="contato">
-  <h2>Contato</h2>
+<div class="card" id="contato">
+  <h2>📨 Contato</h2>
+  <p>Entre em contato para divulgar sua oportunidade ou tirar dúvidas.</p>
   <p>Email: mozlinked@gmail.com</p>
-  <p>Telefone: +258 84 123 4567</p>
-</section>
+  <p>Telefone: +258 861 756 552</p>
+</div>
 
-<footer>
-  <p>&copy; 2025 MozLinked. Todos os direitos reservados.</p>
-</footer>
-
+  </section>  <footer>
+    <p>&copy; 2025 MozLinked. Feito com ❤️ em Moçambique.</p>
+  </footer>
 </body>
 </html>
