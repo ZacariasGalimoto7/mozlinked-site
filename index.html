@@ -3,95 +3,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MozLinked</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-    }
-    header {
-      background: #003366;
-      color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    header h1 {
-      margin: 0;
-      color: #000; 
-    }
-    header h1 span {
-      color: #007BFF;
-    }
-    nav a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b') center/cover;
-      color: white;
-      padding: 5rem 2rem;
-      text-align: center;
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .oportunidades {
-      padding: 2rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-    }
-    .card {
-      background: white;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .card h3 {
-      color: #003366;
-    }
-    footer {
-      background: #003366;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Moz<span>Linked</span></h1>
+    <div class="logo-container">
+      <img src="logo.png" alt="MozLinked Logo" class="logo">
+      <h1>Moz<span class="highlight">Linked</span></h1>
+    </div>
     <nav>
-      <a href="#">Início</a>
-      <a href="#">Sobre</a>
-      <a href="#">Partilhe</a>
-      <a href="#">Contato</a>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#nacionais">Oportunidades Nacionais</a></li>
+        <li><a href="#internacionais">Internacionais</a></li>
+        <li><a href="#submeter">Submeter</a></li>
+        <li><a href="tel:+258861756552">📞 +258 86 175 6552</a></li>
+      </ul>
     </nav>
-  </header>  <section class="hero">
-    <h2>Descubra oportunidades em Moçambique e além</h2>
-    <p>Empregos, bolsas, estágios, cursos e muito mais</p>
-  </section>  <section class="oportunidades">
-    <div class="card">
-      <h3>Bolsa para mestrado na África do Sul</h3>
-      <p>Prazo: 30 de Setembro | Categoria: Oportunidades Internacionais</p>
+  </header>  <section id="home" class="hero">
+    <h2>Bem-vindo ao MozLinked</h2>
+    <p>A sua fonte de bolsas, empregos, estágios e formações em Moçambique e no mundo!</p>
+  </section>  <section id="nacionais">
+    <h2>Oportunidades por Província</h2>
+    <div class="categorias">
+      <div class="provincia">
+        <h3>Maputo</h3>
+        <ul>
+          <li>📚 Bolsa de Estudo UEM</li>
+          <li>💼 Vaga de Emprego na EDM</li>
+        </ul>
+      </div>
+      <div class="provincia">
+        <h3>Sofala</h3>
+        <ul>
+          <li>🧪 Estágio no Hospital Central da Beira</li>
+          <li>🛠️ Formação em TIC</li>
+        </ul>
+      </div>
     </div>
-    <div class="card">
-      <h3>Vaga para Engenheiro em Maputo</h3>
-      <p>Empresa X precisa de engenheiro civil | Categoria: Maputo</p>
-    </div>
-    <div class="card">
-      <h3>Formação gratuita em TIC - Nampula</h3>
-      <p>Curso de 3 semanas em tecnologia | Categoria: Nampula</p>
-    </div>
+  </section>  <section id="internacionais">
+    <h2>Oportunidades Internacionais</h2>
+    <ul>
+      <li>📚 Bolsa Chevening – Reino Unido</li>
+      <li>💼 Estágio na União Africana</li>
+    </ul>
+  </section>  <section id="submeter">
+    <h2>Submeter uma Oportunidade</h2>
+    <form action="https://formspree.io/f/{seu-email-id}" method="POST">
+      <label>Nome da Oportunidade:<br>
+        <input type="text" name="nome" required>
+      </label><br>
+      <label>Tipo:<br>
+        <select name="tipo">
+          <option>Bolsa</option>
+          <option>Emprego</option>
+          <option>Estágio</option>
+          <option>Formação</option>
+        </select>
+      </label><br>
+      <label>Província/Distrito:<br>
+        <input type="text" name="local">
+      </label><br>
+      <label>Descrição ou Link:<br>
+        <textarea name="descricao"></textarea>
+      </label><br>
+      <button type="submit">Submeter</button>
+    </form>
   </section>  <footer>
-    <p>Contacto oficial: +258 861 756 552 | &copy; 2025 MozLinked</p>
+    <p>&copy; 2025 MozLinked. Todos os direitos reservados.</p>
   </footer>
 </body>
-</html>
+  </html>
