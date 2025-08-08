@@ -1,46 +1,85 @@
-<!DOCTYPE html><html lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MozLinked</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .title span.link {
+      color: #007BFF; /* azul para "Linked" */
+    }
+
+    .subtitle {
+      font-size: 16px;
+      margin-top: 5px;
+      color: #555;
+    }
+
+    .content {
+      padding: 30px;
+    }
+
+    .content h2 {
+      color: #007BFF;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="MozLinked Logo" class="logo">
-    <h1>MozLinked</h1>
-    <p>Oportunidades para todos os moçambicanos</p>
-  </header>  <main>
-    <section class="oportunidade">
-      <h2>Bolsa de Estudos em Maputo</h2>
-      <p><strong>Categoria:</strong> Bolsa</p>
-      <p><strong>Província:</strong> Maputo</p>
-      <p>Inscreva-se para uma bolsa completa para cursos técnicos e universitários.</p>
-      <a href="detalhes/bolsa-maputo.html">Ver detalhes</a>
-      <div class="partilha">
-        <a href="https://wa.me/?text=https://mozlinked.com/detalhes/bolsa-maputo.html" target="_blank">Partilhar no WhatsApp</a>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://mozlinked.com/detalhes/bolsa-maputo.html" target="_blank">Facebook</a>
-        <a href="https://twitter.com/intent/tweet?url=https://mozlinked.com/detalhes/bolsa-maputo.html" target="_blank">X</a>
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://mozlinked.com/detalhes/bolsa-maputo.html" target="_blank">LinkedIn</a>
-      </div>
-    </section><section class="oportunidade">
-  <h2>Estágio Profissional em Nampula</h2>
-  <p><strong>Categoria:</strong> Estágio</p>
-  <p><strong>Província:</strong> Nampula</p>
-  <p>Estágio remunerado em empresa de tecnologia por 6 meses.</p>
-  <a href="detalhes/estagio-nampula.html">Ver detalhes</a>
-  <div class="partilha">
-    <a href="https://wa.me/?text=https://mozlinked.com/detalhes/estagio-nampula.html" target="_blank">Partilhar no WhatsApp</a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https://mozlinked.com/detalhes/estagio-nampula.html" target="_blank">Facebook</a>
-    <a href="https://twitter.com/intent/tweet?url=https://mozlinked.com/detalhes/estagio-nampula.html" target="_blank">X</a>
-    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://mozlinked.com/detalhes/estagio-nampula.html" target="_blank">LinkedIn</a>
-  </div>
-</section>
 
-  </main>  <footer>
-    <p>Contacto oficial: +258861756552</p>
-    <p>&copy; 2025 MozLinked. Todos os direitos reservados.</p>
-  </footer>
+  <!-- Cabeçalho com logotipo -->
+  <div class="header">
+    <img src="logo.png" alt="MozLinked Logo">
+    <div>
+      <div class="title">Moz<span class="link">Linked</span></div>
+      <div class="subtitle">Oportunidades para todos os moçambicanos</div>
+    </div>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="content">
+    <h2>Bem-vindo ao MozLinked</h2>
+    <p>Esta plataforma tem como objetivo divulgar oportunidades de emprego, bolsas de estudo, estágios e formações em Moçambique e em toda a CPLP.</p>
+    <p>Fique atento às atualizações diárias e aproveite para partilhar com os seus amigos e familiares.</p>
+  </div>
+
+  <!-- Rodapé -->
+  <div class="footer">
+    &copy; 2025 MozLinked. Todos os direitos reservados.
+  </div>
+
 </body>
-</html>
+  </html>
